@@ -90,7 +90,7 @@ section {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.ontacts-list{
+.contacts-list{
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -283,12 +283,10 @@ section {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.arc-social:hover{
+.arc-social:hover, .arc-social:focus {
     background-color: #404bbf;
 }
-.arc-social:focus{
-  background-color: #404bbf;
-}
+
 .team-icon {
   fill: #f4f4fd;
 }
@@ -411,7 +409,7 @@ section {
   color: #404bbf;
 }
 .end {
-  background: #2e2f42;
+  background: hsl(237, 18%, 22%);
   padding: 100px 0;
 }
 .end-logo {
@@ -450,6 +448,7 @@ section {
   gap: 120px;
   margin-right: 120px;
   
+  
 }
 .end-icon-box {
   display: flex;
@@ -477,9 +476,7 @@ section {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.arc-social-end:hover{
+.arc-social-end:hover, .arc-social-end:focus {
     background-color: #31d0aa;
 }
-.arc-social-end:focus{
-  background-color: #31d0aa;
-}
+
