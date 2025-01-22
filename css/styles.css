@@ -411,6 +411,7 @@ section {
 .end {
   background: hsl(237, 18%, 22%);
   padding: 100px 0;
+  margin: 0 auto;
 }
 .end-logo {
   display: inline-block;
@@ -445,11 +446,11 @@ section {
 .container-end{
   display: flex;
   align-items: baseline;
-  gap: 120px;
-  margin-right: 120px;
-  
-  
-}
+  width: 1158px;
+  }
+  .end-logo-text-box{
+    margin-right: 120px;
+  }
 .end-icon-box {
   display: flex;
   align-items: center;
