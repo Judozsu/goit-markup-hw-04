@@ -90,8 +90,23 @@ section {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.menu-list{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts-list{
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    
 }
 .contacts{
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,11 +114,34 @@ section {
 
 .menu-nav {
   display: block;
-  color: #404bbf;
+  color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-nav-studio{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+}
+.menu-nav-studio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    /*transform: scaleX(0);  Початковий стан - схований */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-nav-studio:hover:after {
+    transform: scaleX(1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 .menu-nav::after {
   content: "";
   position: absolute;
@@ -118,15 +156,19 @@ section {
 }
 .menu-nav:hover:after {
   transform: scaleX(1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-nav:hover {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-navigation {
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-navigation:hover {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adr-items {
   display: flex;
@@ -144,11 +186,13 @@ section {
 }
 .contacts:hover {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-main {
   background: #2e2f42;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 180px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,7 +201,7 @@ section {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(../images/people-office.jpg);
 }
 .page-main .container {
   display: flex;
@@ -197,7 +241,6 @@ section {
   background-color: #404bbf;
 }
 .advantage-title {
-  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -380,10 +423,10 @@ section {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-box-img:hover .overlay-text {
+.portfolio-list:hover .overlay-text {
   transform: translateY(0%);
 }
-.portfolio-box-img:hover {
+.portfolio-list:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -442,7 +485,6 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 16px;
   margin-bottom: 16px;
 }
 
@@ -451,6 +493,17 @@ section {
   align-items: baseline;
   width: 1158px;
   }
+  .end-logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+  }
+ 
+
   .end-logo-text-box{
     margin-right: 120px;
   }
