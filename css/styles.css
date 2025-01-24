@@ -491,7 +491,7 @@ section {
   margin-bottom: 16px;
 }
 
-.container-end{
+.end .container{
   display: flex;
   align-items: baseline;
   width: 1158px;
